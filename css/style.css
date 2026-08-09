@@ -1,6 +1,5 @@
 body {
-    /*font-family: 'Open Sans';*/
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 .menu-list a.is-active {
@@ -9,34 +8,29 @@ body {
     font-weight: 600;
 }
 
-.details h3{
-    font-weight:600;
-    font-size:1em;
-    color:#000;
+.details h3 {
+    font-weight: 600;
+    font-size: 1em;
+    color: #000;
 }
-
 
 .sticky {
     position: sticky;
     top: 30px;
 }
 
-.social{
-    /*float: left;*/
+.social {
     padding-bottom: 2em;
-    padding-top: 0em;
-    font-size: 1em;
+    padding-top: 0;
 }
 
-.sidebar{
-    /*float: left;*/
+.sidebar {
     padding-bottom: 2em;
     padding-top: 1em;
-    font-size: 1em;
 }
 
 img.img-logo {
-    height: auto; 
+    height: auto;
     width: 11em;
 }
 
@@ -44,11 +38,59 @@ img.img-logo {
     margin: auto;
 }
 
-/* https://pytorch.org/assets/brand-guidelines/PyTorch-Brand-Guidelines.pdf */
-.details a:hover, .right-panel a:hover { color: rgb(238, 76, 44); }
-a:active { color: rgb(238, 76, 44) }
-#sidebar a:hover{text-decoration: none;}
-.social a:hover{text-decoration: none; color: #4a4a4a; }
-.social a:hover svg{transform: scale(1.5);}
-.dark{color: #4a4a4a!important;}
-.dark:hover{color: #4a4a4a!important;}
+.details a:hover, .right-panel a:hover {
+    color: rgb(238, 76, 44);
+}
+
+a:active {
+    color: rgb(238, 76, 44);
+}
+
+#sidebar a:hover {
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: none;
+}
+
+.social a:hover svg {
+    transform: scale(1.5);
+}
+
+.dark {
+    color: #4a4a4a !important;
+}
+
+.dark:hover {
+    color: #4a4a4a !important;
+}
+
+.avatar {
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.right-panel {
+    line-height: 1.65;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 1.5rem 1rem;
+    }
+
+    .sticky {
+        position: static;
+        text-align: center;
+    }
+
+    #sidebar {
+        width: 100%;
+        text-align: left;
+    }
+
+    .right-panel {
+        padding-top: 1rem;
+    }
+}
